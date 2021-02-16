@@ -12,7 +12,6 @@ module.exports = {
                 try {
 
                     const user = await USER.findOne({ email: email });
-                    console.log(user);
                     if (!user) {
                         return done(null, false, { message: 'No user with that email' })
                     }

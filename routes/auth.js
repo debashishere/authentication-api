@@ -34,6 +34,7 @@ router.post('/login', passport.authenticate('local', { session: false }), async 
 
     try {
         const user = req.user;
+        console.log('user', user)
         const jwt = await logUserIn(user);
         const resData = {
             message: "save the token for future request",
