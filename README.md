@@ -62,4 +62,17 @@ Authorization Header: Bearer Token<jwt>
         "updatedAt": "2021-02-19T07:13:02.027Z"<br>
     }<br>
 }<br>
+<hr>
 
+## Technologies
+- Node.js
+- Express.js
+- Passport.js
+- MongoDb
+- Postman
+
+
+## Features
+- Secure authentication using Token, Encrypted with RSA private keypair.
+- User Login / Signup to get token, tokens can be validated in application server with public key.
+- Protected route to test if the application working.
