@@ -49,8 +49,11 @@ module.exports = {
     initializeJwt: async (passport) => {
 
         try {
-            const publicKey = getPublicKey();
             const jwt = getJwt();
+            if (!jwt) {
+                return done(null, false);
+            }
+            const publicKey = getPublicKey();
             const verifyOptions = getVarifyOptions(jwt, publicKey);
 
             passport.use(new JWTStrategy(verifyOptions, async function (jwtPayLoad, done) {

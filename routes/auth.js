@@ -15,7 +15,7 @@ router.post('/signup', validateNewUser(schemas.USER), validatePassword, async (r
     try {
         const newUser = req.body;
         const { status, message, data = {} } = await createUser(newUser);
-        const resData = {
+        let resData = {
             message: message,
             data: data,
         }
