@@ -73,6 +73,6 @@ Authorization Header: Bearer Token<jwt>
 
 
 ## Features
-- Secure authentication using Token, Encrypted with RSA private keypair.
+- Secure authentication using Token, Encrypted with RSA private key.
 - User Login / Signup to get token, tokens can be validated in application server with public key.
 - Protected route to test if the application working.
