@@ -2,7 +2,7 @@ const env = process.env.NODE_ENV || 'development';
 if (env == 'development') {
     const dotenv = require('dotenv')
     //Load Configuration
-    dotenv.config({ path: './config/config.env' });
+    dotenv.config();
 }
 
 const express = require("express");
